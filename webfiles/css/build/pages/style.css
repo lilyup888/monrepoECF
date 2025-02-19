@@ -327,19 +327,31 @@ header section {
     flex: 1 1 calc(25% - 1.25rem);
 }
 .guestOne{
-    transform: scale(1.5);
+    transform: scale(1.1);
     transition: transform 0.7s;
 }
 
 .guestOne:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: transform 0.7s;
 }
 .invit {
     background-color: #183054;
     box-shadow: 27px 18px 27px 17px rgba(0, 0, 0, 0.3);
-    background: linear-gradient(135deg, #183054, #0d1a2d);
+    background: linear-gradient(135deg, #183054, #12263f, #0b1a2d);
+   
+    width: 1110px;
+    height: 841px;
+    
 }
+.invitOne{
+    transform: scale(1.5);
+    transition: transform 0.7s;
+}
+.invitOne:hover{
+    transform: scale(1.2);
+    transition: transform 0.7s;
+    }
 #invite{ 
     padding-top: 3rem;
     font-size: 2Opx;
@@ -360,6 +372,8 @@ header section {
 .invit img {
     padding: 1rem;
     text-align: center;
+    width: 379px;
+    height: 300px;
     
     }
 #partners {

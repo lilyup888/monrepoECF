@@ -13,8 +13,8 @@ invited.addEventListener("click", function () {
     invited.classList.toggle("invitOne");
   });
 
-  const burger = document.querySelector("#burger-icon");
-  const navMenu = document.querySelector(".mobilenav");
+  const burger = document.querySelector("nav button span");
+  const navMenu = document.querySelector(".mobileNav");
 
 burger.addEventListener("click", function (){
   navMenu.classList.toggle("open");});

@@ -312,6 +312,8 @@ header section {
     width: 100%;
     width: 200px;
     height: 195px;
+    box-shadow: 27px 18px 27px 17px rgba(0, 0, 0, 0.3);
+   
 }
 .guests-container article p {
     order: 3;
@@ -324,14 +326,23 @@ header section {
 .guests-container article:nth-child(n + 3) {
     flex: 1 1 calc(25% - 1.25rem);
 }
+.guestOne{
+    transform: scale(1.5);
+    transition: transform 0.7s;
+}
+
+.guestOne:hover{
+    transform: scale(1.2);
+    transition: transform 0.7s;
+}
 .invit {
     background-color: #183054;
     box-shadow: 27px 18px 27px 17px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #183054, #0d1a2d);
 }
 #invite{ 
     padding-top: 3rem;
     font-size: 2Opx;
-    background-color: darkblue;
      margin: auto;
 }
 
@@ -343,10 +354,14 @@ header section {
 #invite p {
     font: size 1.25;
     padding-top: 3rem;
- 
     text-align: center;
 
 }
+.invit img {
+    padding: 1rem;
+    text-align: center;
+    
+    }
 #partners {
     max-width: 1150px;
     margin: auto;

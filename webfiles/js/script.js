@@ -10,28 +10,27 @@ invited.addEventListener("click", function () {
     invited.classList.toggle("invitOne");
   });
 
-
- document.addEventListener("DOMContentLoaded", function() {
-  const menuToggle = document.getElementById("burger-icon");
-
-  menuToggle.addEventListener("click", function() {
-      this.classList.toggle("active"); 
-      
-  });
-});
-const boutton= document.getElementById("burger-icon");
-const hiddenMenu= document.getElementById("#hidden");
+  const button= document.getElementById("burger-icon");
+  const hiddenMenu= document.getElementById("hidden");
 
 
-boutton.addEventListener("click", function() {
-    hidden.classList.toggle("hidden");
-    
-});
+  
+    button.addEventListener("click", function() {
+        hidden.classList.toggle("hiddenMenu");
+        hidden.removeAttribute("disabled");
+  
+    });
+ //  hiddenMenu.addEventListener("mouseleave", function () {
+   //  hiddenMenu.classList.add("hidden");
+  //});
 
-hiddenMenu.addEventListener("mouseleave", function () {
-    hiddenMenu.classList.add("hidden");
-});
 
+
+
+   // document.getElementById("#hidden").removeAttribute("disabled");
+
+
+   
 
 
 
@@ -43,6 +42,7 @@ const fnameField = document.getElementById("firstname");
 const mailField = document.getElementById("mail");
 const objectField = document.getElementById("object");
 const messField = document.getElementById("message");
+const agreement = document.getElementById("agreed");
 
 function validateForm() {
   const name = nameField.value.trim();
@@ -50,6 +50,7 @@ function validateForm() {
   const email = mailField.value.trim();
   const object = objectField.value.trim();
   const message = messField.value.trim();
+  const agreement = agreement.checked;
   
  
 
@@ -67,13 +68,28 @@ function validateForm() {
 
 
 
-
-
-
-
 nameField.addEventListener("input", validateForm);
 fnameField.addEventListener("input", validateForm);
 mailField.addEventListener("input", validateForm);
 objectField.addEventListener("input", validateForm);
 messField.addEventListener("input", validateForm);
+agreement.addEventListener("input", validateForm);
 
+
+const nam = document.querySelector(".nam");
+const messError = document.querySelector(".mess");
+
+
+
+function langageForm() {
+  const field = nam.value.trim();
+  const error = messError.textContent.trim();
+}
+
+field.addEventListener("change", () => {
+  if (choice === "") {
+    error.textContent = "Remplir les champs";
+  } else {
+   error.textContent = "Vous avez bien remplis les champs " 
+  }
+});

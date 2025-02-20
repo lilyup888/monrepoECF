@@ -259,16 +259,16 @@ nav button.active span:nth-child(3) {
     padding: 20px;
     border-radius: 10px;
     transform: translateY(-20px);
-    opacity: 0;
+    opacity: -10px;
     visibility: hidden;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-
+    
 }
-#hidden{
+#hidden {
     transform: translateY(0);
     opacity: 1;
     visibility: visible;
-    display: none;
+    
 }
 img#presentation {
     position: absolute;
@@ -413,7 +413,7 @@ header section {
 .invit img {
     padding: 1rem;
     text-align: center;
-    width: 100%;
+    width: 50%;
     height: 300px;
    
     
@@ -464,6 +464,9 @@ footer .underwave-container {
     background: radial-gradient(circle at bottom left, #ed4621 0%, #a11368 100%);
     margin-top: -1rem;
     position: relative;
+}
+.mess{
+    color: #ff3c00;
 }
 footer .underwave-container::before {
     content: "";
